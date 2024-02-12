@@ -25,4 +25,31 @@ function calculatorTriangleArea(){
 
 function calculatorRectangleArea(){
     const rectangleWidthInput = document.getElementById('rectangle-width');
+    const widthNumber = rectangleWidthInput.value;
+    const width = parseFloat(widthNumber);
+    console.log(width)
+    const rectangleLengthInput = document.getElementById('rectangle-length');
+    const rectangleLengthNumber = rectangleLengthInput.value;
+    const length = parseFloat(rectangleLengthNumber);
+    console.log(length);
+
+    const area = width * length;
+    console.log(area);
+    const rectangleArea = document.getElementById('rectangle-area');
+    rectangleArea.innerText = area;
+}
+function calculatorParallelogramArea(){
+    const rectangleBaseInput = document.getElementById('parallelogram-base');
+    const BaseNumber = rectangleBaseInput.value;
+    const base = parseFloat(BaseNumber);
+    console.log(base)
+    const rectangleHeightInput = document.getElementById('parallelogram-height');
+    const rectangleLengthNumber = rectangleHeightInput.value;
+    const height = parseFloat(rectangleLengthNumber);
+    console.log(height);
+
+    const area = base * height;
+    console.log(area);
+    const parallelogramArea = document.getElementById('parallelogram-area');
+   parallelogramArea.innerText = area;
 }

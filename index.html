@@ -43,40 +43,36 @@
                   <h2 class="card-title justify-center">Rectangle</h2>
                   <p class="flex justify-center">Area (A) = W X L</p>
                   <div class="">
-                    <input type="`text" id="" class="w-[65px] text-xl p-2 rounded-sm bg-gray-100"  name="" placeholder="width"><span class="mr-2 pl-2">cm</span>
-                    <input type="text" name="" id="" class="w-[67px] text-xl p-2 rounded-sm bg-gray-100" placeholder="length" ><span class="mr-2 pl-2">cm</span>
+                    <input type="`text" id="rectangle-width" class="w-[65px] text-xl p-2 rounded-sm bg-gray-100"  name="" placeholder="width"><span class="mr-2 pl-2">cm</span>
+                    <input type="text" name="" id="rectangle-length" class="w-[67px] text-xl p-2 rounded-sm bg-gray-100" placeholder="length" ><span class="mr-2 pl-2">cm</span>
                   </div>
                   <div>
-                    <p class="text-2xl">Area: <span id="triagle-area"></span>cm <sup>2</sup></p>
+                    <p class="text-2xl">Area: <span id="rectangle-area"></span>cm <sup>2</sup></p>
                   </div>
                   <div class="card-actions justify-end">
                     <button onclick="calculatorRectangleArea()" class="btn btn-primary w-full">calculator</button>
                   </div>
                 </div>
               </div>  
-              <!--  -->
-            <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+              <!-- parallelogram -->
+              <div class="card  bg-base-100 shadow-xl">
+                <figure><img class="p-3" src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title justify-center">Parallelogram</h2>
+                  <p class="flex justify-center">Area (A) = b X h</p>
+                  <div class="">
+                    <input type="`text" id="parallelogram-base" class="w-[65px] text-xl p-2 rounded-sm bg-gray-100"  name="" placeholder="b"><span class="mr-2 pl-2">cm</span>
+                    <input type="text" name="" id="parallelogram-height" class="w-[67px] text-xl p-2 rounded-sm bg-gray-100" placeholder="h" ><span class="mr-2 pl-2">cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="parallelogram-area"></span>cm <sup>2</sup></p>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="calculatorParallelogramArea()" class="btn btn-primary w-full">calculator</button>
                   </div>
                 </div>
-              </div>  
-              <!--  -->
-            <div class="card  bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>  
-        </div>
+              </div> 
+              </div> 
         <!-- ?are calculation -->
         <div class=" border-2 border-gray-400 rounded-md">
            <h3 class="text-3xl">Area Calculation</h3>             
