@@ -8,19 +8,26 @@ function calculatorTriangleArea(){
     const triagleBaseInput = document.getElementById('triagle-base');
     const triagleBaseNumber = triagleBaseInput.value;
     const base = parseFloat(triagleBaseNumber);
-    console.log(base)
+    // console.log(base)
 
     const triagleHeightInput = document.getElementById('triagle-height');
     const triagleHeightNumber = triagleHeightInput.value;
     const height =parseFloat(triagleHeightNumber);
-    console.log( height)
+    // console.log( height)
     const area = 0.5 * base * height ;
     console.log(area)
 
     const triagleArea = document.getElementById('triagle-area');
     triagleArea.innerText = area;
+    setAreaResult('Triangle', area);
+    
 }
-
+function setAreaResult(shape, area) {
+    const areaResult = document.getElementById('area-result');
+    // areaResult.innerText = `Area calculation: ${shape} area is ${area} cm²`;
+    const newResult = `Area: ${shape} area is ${area} cm²<br>`;
+    areaResult.innerHTML += newResult;
+  }
 
 
 function calculatorRectangleArea(){
@@ -37,6 +44,7 @@ function calculatorRectangleArea(){
     console.log(area);
     const rectangleArea = document.getElementById('rectangle-area');
     rectangleArea.innerText = area;
+    setAreaResult('rectangle', area);
 }
 // function calculatorParallelogramArea(){
 //     const rectangleBaseInput = document.getElementById('parallelogram-base');
@@ -63,6 +71,7 @@ function calculatorParallelogramArea(){
     console.log(area);
     const parallelogramArea = document.getElementById('parallelogram-area');
     parallelogramArea.innerText = area;
+    setAreaResult('parallelogram', area);
   
 }
 
@@ -89,6 +98,7 @@ function caculatorRhombusArea(){
     console.log(area);
     const rhombusArea = document.getElementById('rhombus-area');
     rhombusArea.innerText = area;
+    setAreaResult('rhombus', area);
 }
 function getPentagonvalue(input){
     const inputfeild = document.getElementById(input);
@@ -104,7 +114,7 @@ function caculatorPentagonArea(){
     console.log(area);
     const pentagonArea = document.getElementById('pentagon-area');
     pentagonArea.innerText = area;
-
+    setAreaResult('pentagon', area);
 }
 function getEllipsevalue(input){
     const inputfeild = document.getElementById(input);
@@ -120,4 +130,5 @@ function caculatorEllipseArea(){
     console.log(area);
     const ellipseArea = document.getElementById('ellipse-area');
     ellipseArea.innerText = area;
+    setAreaResult('ellipse', area);
 }
